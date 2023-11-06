@@ -14,7 +14,7 @@ different user types, and multiple scenarios will be tested to ensure that
 access rights are respected.
 The end goal is to create a secure, user-friendly platform that promotes
 collaboration, knowledge-sharing, and growth within the university
-community.
+community using Python Flask and Oracle database integration."
 
 ## Installation
 
