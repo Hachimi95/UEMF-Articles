@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1 style="color: #093968;">User List <small> Welcome {{session.username}}</small></h1>
+  <a class="btn btn-success" href="/add_user"> Add User</a>
+  <hr>
+  <table class="table table-striped" style="background-color: #f5f5f5  ;" style="width: 100%; border: 1px solid black;">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+    </tr>
+    {% for user in users %}
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td><a href="edit_user/{{user.id}}" class="btn btn-primary">Edit</a></td>
+        <td>
+          <form action="{{url_for('delete_user', id=user.id)}}" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete" class="btn btn-danger">
+          </form>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

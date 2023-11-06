@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <div class="d-flex align-items-center h-100">
+    <div class="text-center w-50">
+      <h1 class="display-4 font-weight-bold" style="color: #093968;">Welcome To UEMF Articles</h1>
+      <p class="lead font-weight-light text-secondary text-dark" style="color: #000000;">The world is a library, and articles are its books. Read, learn, and discover with UEMF Articles</p>      {% if session.logged_in == NULL %}
+        <div class="d-flex justify-content-around mt-3">
+          <a href="/register" class="btn btn-primary btn-lg px-4 font-weight-bold">Register</a>
+          <a href="/login" class="btn btn-success btn-lg px-4 font-weight-bold">Login</a>
+        </div>
+      {% endif %}
+    </div>
+    <div class="w-50">
+      <img src="https://yt3.googleusercontent.com/ytc/AMLnZu_Uuw6w79aAYiZR8FJn6Yk__vBAEMppb4S19YJV=s900-c-k-c0x00ffffff-no-rj" alt="Image from the internet" class="img-fluid">
+    </div>
+  </div>
+{% endblock %}

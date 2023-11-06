@@ -1,0 +1,54 @@
+.container {
+    height: 100vh;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px #ccc;
+    margin-bottom: 0.5em;
+  }
+  
+  p.lead {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #555;
+    margin-bottom: 1.5em;
+  }
+  
+  a.btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 10px;
+    transition: all 0.2s;
+    text-shadow: 1px 1px #ccc;
+    box-shadow: 2px 2px #ccc;
+  }
+  
+  a.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  a.btn-primary:hover {
+    background-color: #2980b9;
+    box-shadow: 3px 3px #ccc;
+  }
+  
+  a.btn-success {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  a.btn-success:hover {
+    background-color: #27ae60;
+    box-shadow: 3px 3px #ccc;
+  }
+  

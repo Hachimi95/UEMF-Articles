@@ -1,0 +1,77 @@
+body {
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    padding: 50px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .navbar a {
+    color: #fff;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
+  .alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  .navbar {
+    background-color: #4b0a0a;
+  }
+  
+  .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-nav li a {
+    color: white;
+  }
+  
+  .navbar-nav li a:hover {
+    background-color: #cccccc;
+    color: black;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+    color: #fff;
+}
